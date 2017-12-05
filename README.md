@@ -1,6 +1,6 @@
 # Ngrx Sample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5. Take a look at the <a href="http://ngrx-sample.azurewebsites.net" target="_blank">live app</a>.
 
 ## Code scaffolding
 
