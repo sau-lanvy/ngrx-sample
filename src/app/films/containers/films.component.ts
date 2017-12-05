@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Film } from '../models/film';
 import { FilmsService } from '../services/films.service';
 
@@ -11,7 +11,8 @@ import { Observable } from 'rxjs/Observable';
   selector: 'app-films',
   template: `<app-search-input [query]="searchQuery$ | async" (search)="onSearch($event)"></app-search-input>
              <app-search-results [films] = "films$ | async"></app-search-results>
-            `
+            `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FilmsComponent implements OnInit {
   searchQuery$: Observable<string>;
