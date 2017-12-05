@@ -28,7 +28,7 @@ export class FilmsEffects {
 
         return this.filmsService
           .searchFilms(query)
-          .map((films) => new SearchActions.SearchComplete(films))
+          .map((films: Film[]) => new SearchActions.SearchComplete(films))
           .catch(error => of(new SearchActions.SearchError(error)));
     });
 
